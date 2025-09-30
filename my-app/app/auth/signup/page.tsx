@@ -1,13 +1,17 @@
-export default function SignInPage() {
+import Navbar from "@/components/Navbar";
+export default function SignUpPage() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Sign In Page</h1>
-      <div>
-        <LabelledInput label="Email" placeholder="Enter your email" type="email" />
+    <>
+      {/* <Navbar /> */}
+      <div className="flex min-h-screen flex-col items-center justify-between p-24">
+        <h1 className="text-4xl font-bold">Sign Up Page</h1>
+        <div>
+          <LabelledInput label="Email" placeholder="Enter your email" type="email" />
         <LabelledInput label="Password" placeholder="Enter your password" type="password" />
         <button className="bg-blue-500 text-white p-2 rounded-lg ml-4">Submit</button>
       </div>
     </div>
+    </>
   )
 }
 
