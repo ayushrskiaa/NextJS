@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import Header from "../../../components/header";
 interface BlogPost {
   id: number;
   title: string;
@@ -20,6 +20,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
 
   return (
     <div className="min-h-screen py-8 px-4">
+      <Header />
       <div className="max-w-4xl mx-auto">
         {/* Blog Post Card */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
